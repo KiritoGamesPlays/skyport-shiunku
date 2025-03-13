@@ -1,0 +1,14 @@
+{
+    "baseUri": "http://localhost:3001",
+    "port": 3001,
+    "domain": "localhost",
+    "mode": "production",
+    "version": "0.4.0",
+    "ogTitle": "Shiunku",
+    "ogDescription": "This is an instance of the Shiunku - learn more at https://github.com/shindozk/Shiunku",
+    "total_resources": {
+        "ram": 4096,
+        "cores": 1,
+        "disk": 10
+    }
+} 

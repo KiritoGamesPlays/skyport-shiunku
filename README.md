@@ -1,5 +1,6 @@
-# Skyport Panel (Shiunku) - v0.3.5
+# Skyport Panel (Shiunku) - v0.4.0
 
+Fork from **ma4z** (Oversee Panel)
 **By ShindoZk**
 
 [![Panel Image](https://i.imgur.com/SU7QypZ.png)](https://i.imgur.com/SU7QypZ.png)
@@ -39,39 +40,25 @@ The auto installer feature is coming soon. Stay tuned for updates!
 
 Follow these steps to manually install Skyport Panel and its daemon:
 
-1. **Clone the Repository:**
-
-   Open your terminal and run:
-   ```bash
-   git clone https://github.com/shindozk/skyport-shiunku
-   cd skyport-shiunku
-   ```
-
-2. **Set Up the Panel:**
-
-   Navigate to the panel directory, install dependencies, seed the database, create a user, and start the panel:
-   ```bash
-   cd skyport-panel
-   npm install
-   npm run seed
-   npm run createUser
-   node .
-   ```
+1. **Paste the commands:**
+```bash
+git clone https://github.com/shindozk/Shiunku && cd Shiunku && npm install && npm run seed && npm run createUser && node .
+```
 
 3. **Set Up the Daemon:**
 
    Open a new terminal window, then navigate to the daemon directory and install dependencies:
    ```bash
-   cd daemon
-   npm install
-   node .
+   git clone https://github.com/shindozk/ShiunkuDaemon && cd Shiunku && npm install
+   // Paste daemon configuration on panel
+   
    ```
 
 4. **Configure the Daemon:**
 
    Link the daemon to the panel by running:
    ```bash
-   npm run configure -- --panel http://localhost:9000 --key ac5edad5-a0ee-4e3d-a10b-05c3aa707924
+   npm run configure -- --panel http://localhost:3002 --key ac5edad5-a0ee-4e3d-a10b-05c3aa707924
    ```
    **Note:** Make sure to change the URL protocol to `http`, set the host to `localhost`, and use the correct port available in your configuration, as shown in the example above.
 
