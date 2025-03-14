@@ -53,9 +53,9 @@ bash <(curl -s https://raw.githubusercontent.com/shindozk/ShiunkuImages/main/shi
 If you encounter issues with the daemon, you can attempt to fix them with the following command:
 
 ```bash
-npm run configure -- --panel http://localhost:3002 --key YOUR_API_KEY
+npm run configure -- --panel http://localhost:3001 --key YOUR_API_KEY
 ```
-Replace `http://localhost:3002` with your panel's URL and `YOUR_API_KEY` with the actual API key provided by your panel configuration.
+Replace `http://localhost:3001` with your panel's URL and `YOUR_API_KEY` with the actual API key provided by your panel configuration.
 
 ## Configuration
 
