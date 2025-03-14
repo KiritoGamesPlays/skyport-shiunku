@@ -57,7 +57,7 @@ program
 
         async function performSeeding() {
         try {
-            const imagesIndexResponse = await axios.get('https://raw.githubusercontent.com/hydren-dev/images_v2/main/seed/0.1.0-beta2.json');
+            const imagesIndexResponse = await axios.get('https://raw.githubusercontent.com/shindozk/ShiunkuImages/main/seed/seed_skyport_latest.json');
             const imageUrls = imagesIndexResponse.data;
             let imageDataArray = [];
 
@@ -180,7 +180,7 @@ program
         }
         
         async function main() {
-            log.init('create a new *admin* user for the OverSee panel:')
+            log.init('create a new *admin* user for the Shiunku panel:')
             log.init('you can make regular users from the admin -> users page!')
             const username = await askQuestion("username: ");
             const email = await askQuestion("email: ");
