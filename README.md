@@ -1,76 +1,68 @@
-# Skyport Panel (Shiunku) - v0.4.0
+# Skyport Panel (Shiunku) - v0.4.5
 
-Fork from **ma4z** (Oversee Panel)
+Forked from **ma4z**'s Oversee Panel  
 **By ShindoZk**
 
 [![Panel Image](https://i.imgur.com/SU7QypZ.png)](https://i.imgur.com/SU7QypZ.png)
 
 [![Discord](https://img.shields.io/discord/1253782902618194011?label=Discord&logo=Discord&logoColor=white&style=for-the-badge)](https://skyport.privt.xyz/)  
-[![GitHub contributors](https://img.shields.io/github/contributors/skyportlabs/panel?style=for-the-badge)](https://github.com/skyportlabs/panel)
+[![GitHub Contributors](https://img.shields.io/github/contributors/skyportlabs/panel?style=for-the-badge)](https://github.com/skyportlabs/panel)
 
 ## Overview
 
-Skyport Panel is an open source web interface designed to manage and operate game servers and various applications. Built with Node.js, Express, and Dockerode, it provides a robust platform to deploy, monitor, and control your server instances efficiently. Whether you’re running game servers or other applications, Skyport Panel simplifies management tasks while offering a scalable and secure environment.
+Shiunku Panel (Skyport Panel) is an open-source web interface designed to manage and operate game servers and various applications effortlessly. Built with Node.js, Express, and Docker, it provides a robust, scalable, and secure platform to deploy, monitor, and control your server instances. Whether you're running game servers or other services, Shiunku Panel simplifies management tasks and streamlines your workflow.
 
-**Join our community:** [Click here to join our Discord.](https://skyport.privt.xyz/)
+**Join our community on Discord:** [Click here to join our Discord](https://skyport.privt.xyz/)
 
-## Supported Application Types (Eggs)
+## Supported Application Types (Images/Eggs)
 
-- **Node.js:** Fully operational and actively developed.
-- **Python:** Coming soon.
-- **Java:** Coming soon.
-- **Lavalink:** Coming soon.
+- **Node.js:** Fully operational.
+- **Python:** Fully operational.
+- **Java:** Fully operational.
+- **Lavalink:** Fully operational.
+- **VM (VPS):** Fully operational.
 
-## Tutorial Installation (After Version):
-https://www.youtube.com/watch?v=biiiRe4CoTE
+[![Eggs Image](https://i.imgur.com/example.png)](https://i.imgur.com/example.png)  
+*Click the image to view all available eggs.*
 
-## Installation
+## Installation Guide
 
 ### Prerequisites
 
-Before you begin, ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (v14 or higher)
-- [Docker](https://docs.docker.com/get-docker/) – Make sure Docker is installed and running on your machine.
+Before installing, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v14 or higher recommended)
+- [Docker](https://docs.docker.com/get-docker/) – Docker must be installed and running.
+- Git
 
-### Auto Installer
+### Automatic Installation
 
-The auto installer feature is coming soon. Stay tuned for updates!
+To install **Shiunku Panel** automatically, simply run the following command:
 
-### Manual Installation
-
-Follow these steps to manually install Skyport Panel and its daemon:
-
-1. **Paste the commands:**
 ```bash
-git clone https://github.com/shindozk/Shiunku && cd Shiunku && npm install && npm run seed && npm run createUser && node .
+bash <(curl -s https://raw.githubusercontent.com/shindozk/ShiunkuImages/main/shiunku_panel.sh)
 ```
 
-3. **Set Up the Daemon:**
+To install **Shiunku Daemon**, use:
 
-   Open a new terminal window, then navigate to the daemon directory and install dependencies:
-   ```bash
-   git clone https://github.com/shindozk/ShiunkuDaemon && cd Shiunku && npm install
-   // Paste daemon configuration on panel
-   
-   ```
+```bash
+bash <(curl -s https://raw.githubusercontent.com/shindozk/ShiunkuImages/main/shiunku_daemon.sh)
+```
 
-4. **Configure the Daemon:**
+### Fixing Daemon Issues
 
-   Link the daemon to the panel by running:
-   ```bash
-   npm run configure -- --panel http://localhost:3002 --key ac5edad5-a0ee-4e3d-a10b-05c3aa707924
-   ```
-   **Note:** Make sure to change the URL protocol to `http`, set the host to `localhost`, and use the correct port available in your configuration, as shown in the example above.
+If you encounter issues with the daemon, you can attempt to fix them with the following command:
 
-For further details, check out our original documentation at [skyport.dev](https://skyport.dev).
+```bash
+npm run configure -- --panel http://localhost:3002 --key YOUR_API_KEY
+```
+Replace `http://localhost:3002` with your panel's URL and `YOUR_API_KEY` with the actual API key provided by your panel configuration.
 
 ## Configuration
 
-Customize your Skyport Panel setup by editing the `config.json` file located in the root directory. This file allows you to configure essential settings such as:
-
-- **Database Connection:** Set up your database credentials and connection parameters.
+Customize your setup by editing the `config.json` file in the root directory of the Shiunku repository. This file allows you to adjust essential settings such as:
+- **Database Connection:** Configure your database credentials and connection parameters.
 - **Server Port:** Define the port on which the panel will run.
-- **Other Application Settings:** Adjust additional options to suit your deployment needs.
+- **Other Application Settings:** Modify additional options as needed.
 
 ## Usage
 
@@ -81,24 +73,28 @@ After installation and configuration:
    ```text
    http://localhost:<port>
    ```
-   Replace `<port>` with the port number defined in your `config.json`.
+   Replace `<port>` with the port number specified in your `config.json`.
 
 2. **Log In:**
-   Use the credentials created during the installation process to log into the panel.
+   Use the administrator credentials you created during installation to log into the panel.
 
 3. **Manage Your Servers:**
-   Once logged in, you can easily manage, deploy, and monitor your game servers and applications via the intuitive web interface.
+   Once logged in, you can deploy, monitor, and manage your game servers and other applications through the intuitive web interface.
 
 ## Contributing
 
-Contributions are highly appreciated! If you'd like to improve the Skyport Panel, please follow these steps:
-
+Contributions are highly welcome! If you'd like to contribute:
 1. Fork the repository.
 2. Create a new branch for your changes.
-3. Commit your modifications and submit a pull request detailing your improvements.
+3. Commit your changes with clear descriptions.
+4. Open a pull request detailing your improvements.
 
-Your contributions help make this project better for everyone!
+Your contributions help make Shiunku Panel better for everyone!
 
 ## License
 
-© 2024 Matt James and contributors. All rights reserved. Licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+For additional details and support, visit our [documentation site](https://skyport.dev) or join our [Discord community](https://skyport.privt.xyz/).
